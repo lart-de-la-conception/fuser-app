@@ -1,13 +1,13 @@
 import EmbedFrame from "./components/EmbedFrame";
 
 export default function Home() {
-  const r2PublicUrl = process.env.R2_PUBLIC_URL;
+  const r2PublicUrl = process.env.R2_PUBLIC_URL ?? "https://pub-2530e959493e4b6ea10ef19c815620c8.r2.dev";
   const imageSrc = {
-    richter: r2PublicUrl ? `${r2PublicUrl}/richter.jpg` : "/api/fuser-images/richter",
-    tags: r2PublicUrl ? `${r2PublicUrl}/tags-for-sample.jpg` : "/api/fuser-images/tags",
-    chateau: r2PublicUrl ? `${r2PublicUrl}/chateau-marmont.jpg` : "/api/fuser-images/chateau",
-    basic: r2PublicUrl ? `${r2PublicUrl}/basic-tee.png` : "/api/fuser-images/basic",
-    rothko: r2PublicUrl ? `${r2PublicUrl}/rothko-tee.png` : "/api/fuser-images/rothko",
+    richter: `${r2PublicUrl}/fuser/richter.jpg`,
+    tags: `${r2PublicUrl}/fuser/tags-for-sample.jpg`,
+    chateau: `${r2PublicUrl}/fuser/chateau-marmont.jpg`,
+    basic: `${r2PublicUrl}/fuser/basic-tee.png`,
+    rothko: `${r2PublicUrl}/fuser/rothko-tee.png`,
   };
 
   return (
@@ -76,14 +76,14 @@ export default function Home() {
             <article className="space-y-4 max-w-[34rem] mx-auto w-full">
               <img
                 src={imageSrc.richter}
-                alt="T-shirt design using generated artwork"
+                alt="richter tee"
                 className="w-full aspect-square object-cover"
               />
             </article>
             <article className="space-y-4 max-w-[34rem] mx-auto w-full">
               <img
                 src={imageSrc.tags}
-                alt="Woven label concept with stitched corners"
+                alt="sample tags"
                 className="w-full aspect-square object-contain bg-white"
               />
             </article>
@@ -93,14 +93,14 @@ export default function Home() {
             <article className="space-y-4 max-w-[34rem] mx-auto w-full">
               <img
                 src={imageSrc.chateau}
-                alt="T-shirt mockup with Chateau Marmont lettering"
+                alt="chateau marmont tee"
                 className="w-full aspect-square object-cover"
               />
             </article>
             <article className="space-y-4 max-w-[34rem] mx-auto w-full">
               <img
                 src={imageSrc.basic}
-                alt="Plain blank t-shirt mockup"
+                alt="plain tee"
                 className="w-full aspect-square object-cover"
               />
             </article>
@@ -109,7 +109,7 @@ export default function Home() {
           <article className="space-y-4 max-w-[34rem] mx-auto w-full">
             <img
               src={imageSrc.rothko}
-              alt="Color-block tee concept inspired by painterly studies"
+              alt="rothko tee"
               className="w-full aspect-square object-cover"
             />
           </article>
