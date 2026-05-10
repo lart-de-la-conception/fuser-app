@@ -14,7 +14,7 @@ export default function Home() {
     <main className="w-full">
       {/* Hero */}
       <section className="min-h-screen flex flex-col justify-between px-4 py-12 md:px-8 md:py-16 max-w-[96rem] mx-auto">
-        <header className="flex items-center justify-between">
+        <header className="flex flex-wrap items-center justify-between gap-4">
           <span className="text-xs tracking-widest uppercase text-neutral-400">
             Fuser - Junior Product Designer Application
           </span>
@@ -55,15 +55,15 @@ export default function Home() {
               How I've been using Fuser
             </h2>
           </div>
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 min-w-0">
             <p className="text-lg text-neutral-700 leading-relaxed font-light">
               I've been using Fuser to visualize my ideas and it's been great. It's introduced me to 
-              so many new models and allowed me to play around with them intuitively.
+              many new models and allowed me to play around with them intuitively.
 
-              I spent a few months in Japan and I was working on a clothing brand there and work with a 
-              few factories there. Fuser made the process of visualizing my thoughts for
-              designs so easy and allowed me to better express the desigins with the team I am
-              working with. Below are some other mockups. On my personal site, 
+              I spent some time in Japan and I was working on a clothing brand there with a 
+              few factories. Fuser made the process of visualizing my thoughts for
+              designs easier and allowed me to better express my ideas with the team I am
+              working with. Below are some mockups. On my personal site, 
               <a href="https://dylanroman.co" target="_blank" rel="noopener noreferrer" className="underline hover:text-black transition-colors">dylanroman.co</a>, 
               I also made something using the Creative Coder hidden behind the painting on the right.
          
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-10 pt-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <article className="space-y-4 max-w-[34rem] mx-auto w-full">
               <img
                 src={imageSrc.richter}
@@ -89,7 +89,7 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <article className="space-y-4 max-w-[34rem] mx-auto w-full">
               <img
                 src={imageSrc.chateau}
@@ -99,20 +99,12 @@ export default function Home() {
             </article>
             <article className="space-y-4 max-w-[34rem] mx-auto w-full">
               <img
-                src={imageSrc.basic}
-                alt="plain tee"
+                src={imageSrc.rothko}
+                alt="rothko tee"
                 className="w-full aspect-square object-cover"
               />
             </article>
           </div>
-
-          <article className="space-y-4 max-w-[34rem] mx-auto w-full">
-            <img
-              src={imageSrc.rothko}
-              alt="rothko tee"
-              className="w-full aspect-square object-cover"
-            />
-          </article>
         </div>
       </section>
 
@@ -127,7 +119,7 @@ export default function Home() {
               Product observations &amp; redesigns
             </h2>
           </div>
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 min-w-0">
             <p className="text-lg text-neutral-600 leading-relaxed font-light">
             These are a few interaction and workflow ideas I explored while using Fuser that I felt could improve 
             the overall flow and productivity of a session. I designed and prototyped these concepts in Figma Make 
@@ -145,7 +137,7 @@ export default function Home() {
             I often found myself placing two dependent nodes and manually running them one at a time. 
             I designed a consecutive execution pattern that reduced clicks and made iterative workflows 
             feel faster and more seamless. To the run node, I added two options on hover. Either to run
-            the entire pipeline or the node itself. By default, it runs the node itself.
+            the entire pipeline or the node itself. By default, it should run the node itself.
             </p>
             <EmbedFrame
               src="https://marvel-think-83817429.figma.site/"
@@ -212,7 +204,7 @@ export default function Home() {
             <p className="text-base text-neutral-700 font-light leading-relaxed min-h-12">
             I sometimes used an LLM to generate a more detailed prompt based on what I wanted to create. 
             Occasionally, parts of the generated response didn’t fully align with the vision I had in mind 
-            and would affect the final output. I explored a way for users to directly edit the generated response
+            and would affect the final output. So, I allowed users to directly edit the generated response
             before attaching it to another node or rerunning the workflow, making the iteration process feel more 
             flexible and controlled when relying on AI genereated prompts.
             </p>
@@ -241,7 +233,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-light tracking-tight text-neutral-800">
             Thank you for your consideration
           </h2>
-          <p className="text-sm md:text-base text-neutral-500 font-light tracking-wide">
+          <p className="text-sm md:text-base text-neutral-500 font-light tracking-wide break-words">
             dylan_mitchell@outlook.com | +1 (561) 485-9924 |{" "}
             <a
               href="https://dylanroman.co"
