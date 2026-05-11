@@ -65,7 +65,8 @@ export default function Home() {
               designs easier and allowed me to better express my ideas with the team I am
               working with. Below are some mockups. On my personal site, 
               <a href="https://dylanroman.co" target="_blank" rel="noopener noreferrer" className="underline hover:text-black transition-colors">dylanroman.co</a>, 
-              I also made something using the Creative Coder hidden behind the painting on the right.
+              I also made something using the Creative Coder hidden behind the painting on the right. I'm now exploring
+              creating AI-generated visual effects and videos, as I was inspired by Jon Rafman at NEW SYNTAX.
          
             </p>
           </div>
